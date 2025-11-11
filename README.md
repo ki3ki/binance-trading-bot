@@ -127,9 +127,9 @@ Below is the screenshot of the bot running successfully:
 
 ![Bot Running Screenshot](./screenshots/screenshot1.png)
 
-![Bot Running Screenshot](./screenshots/screenshot 2.png)
+![Bot Running Screenshot](./screenshots/screenshot2.png)
 
-![Bot Running Screenshot](./screenshots/screenshot 3.png)
+![Bot Running Screenshot](./screenshots/screenshot3.png)
 
 ![Bot Running Screenshot](./screenshots/screenshot4.png)
 
