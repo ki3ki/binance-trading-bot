@@ -36,12 +36,12 @@ while incorporating logging and safety checks to reduce execution risk.
 ---
 
 ## 🛠️ Tech Stack
-Component	         Technology
-Language	         Python 3.8+
-Exchange API	     Binance Futures Testnet
-Secrets Management	 .env based config
-Logging	             Python logging module
-Data Storage     	 Local memory / CSV logs
+- Component	         Technology
+- Language	         Python 3.8+
+- Exchange API	     Binance Futures Testnet
+- Secrets Management	 .env based config
+- Logging	             Python logging module
+- Data Storage     	 Local memory / CSV logs
 
 ---
 
@@ -49,28 +49,28 @@ Data Storage     	 Local memory / CSV logs
 
 ### 1. Clone or Download Project
 
-cd C:\Users\YourUsername\projects
-mkdir binance-trading-bot
-cd binance-trading-bot
+- cd C:\Users\YourUsername\projects
+- mkdir binance-trading-bot
+- cd binance-trading-bot
 
 ### 2. Create Virtual Environment
 
 # Windows
-python -m venv venv
-venv\Scripts\activate
+- python -m venv venv
+- venv\Scripts\activate
 
 # Mac/Linux
-python3 -m venv venv
-source venv/bin/activate
+- python3 -m venv venv
+- source venv/bin/activate
 
 ### 3. Install Dependencies
 pip install -r requirements.txt
 
 ### 4. Configure API Credentials
-Create a .env file in the project root:
-BINANCE_API_KEY=your_testnet_api_key_here
-BINANCE_API_SECRET=your_testnet_secret_key_here
-TESTNET=True
+- Create a .env file in the project root:
+- BINANCE_API_KEY=your_testnet_api_key_here
+- BINANCE_API_SECRET=your_testnet_secret_key_here
+- TESTNET=True
 
 ---
 
@@ -136,14 +136,18 @@ Below is the screenshot of the bot running successfully:
 ---
 
 ## 📊 Order Types Explained
-Market Order
+- Market Order
 Executes immediately at the current market price. Best for quick entries/exits.
-Limit Order
+
+- Limit Order
 Executes only at your specified price or better. Good for targeting specific price levels.
-Stop-Limit Order
+
+- Stop-Limit Order
 Triggers a limit order when price reaches your stop price. Useful for stop-losses and breakout entries.
-OCO (One-Cancels-Other)
+
+- OCO (One-Cancels-Other)
 Places two orders simultaneously - when one executes, the other is automatically cancelled. Perfect for take-profit + stop-loss scenarios.
-TWAP (Time-Weighted Average Price)
+
+- TWAP (Time-Weighted Average Price)
 Splits a large order into smaller chunks executed over time to reduce market impact and get better average prices.
 
