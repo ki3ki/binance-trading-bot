@@ -1,6 +1,9 @@
 # Binance Futures Trading Bot
 
-A professional Python trading bot for **Binance Futures Testnet** with support for multiple order types and advanced trading strategies.
+This project aims to automate cryptocurrency trading on Binance using Python and the official Binance API. 
+It supports spot trading and futures markets on both mainnet and testnet environments. 
+The bot allows traders to execute market, limit, stop-limit, and OCO orders with configurable trade parameters, 
+while incorporating logging and safety checks to reduce execution risk.
 
 ---
 
@@ -32,16 +35,26 @@ A professional Python trading bot for **Binance Futures Testnet** with support f
 
 ---
 
+## 🛠️ Tech Stack
+Component	         Technology
+Language	         Python 3.8+
+Exchange API	     Binance Futures Testnet
+Secrets Management	 .env based config
+Logging	             Python logging module
+Data Storage     	 Local memory / CSV logs
+
+---
+
 ## 🛠️ Installation
 
 ### 1. Clone or Download Project
-```bash
+
 cd C:\Users\YourUsername\projects
 mkdir binance-trading-bot
 cd binance-trading-bot
 
 ### 2. Create Virtual Environment
-```bash 
+
 # Windows
 python -m venv venv
 venv\Scripts\activate
@@ -59,7 +72,9 @@ BINANCE_API_KEY=your_testnet_api_key_here
 BINANCE_API_SECRET=your_testnet_secret_key_here
 TESTNET=True
 
-🎮 Usage
+---
+
+## 🎮 Usage
 Start the Bot
 python bot.py
 
@@ -85,7 +100,9 @@ Side: BUY
 Quantity: 0.001
 ✓ Market order placed successfully
 
-📁 Project Structure
+---
+
+## 📁 Project Structure
 binance-trading-bot/
 │
 ├── venv/                  # Virtual environment
@@ -102,18 +119,16 @@ binance-trading-bot/
 ├── requirements.txt     # Python dependencies
 └── README.md           # This file
 
-🧪 Testing
+---
 
-Run the bot and try:
+## 🧪 Testing
 
-Checking price: price
+Below is the screenshot of the bot running successfully:
+![Bot Running Screenshot](./screenshots/screenshot1.png)
 
-Placing order: market
+---
 
-Cancelling order: cancel
-
-
-📊 Order Types Explained
+## 📊 Order Types Explained
 Market Order
 Executes immediately at the current market price. Best for quick entries/exits.
 Limit Order
